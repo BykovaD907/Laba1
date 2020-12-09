@@ -25,10 +25,7 @@ public:
 	Sq_Matrix(int valueX = 3);
 	virtual ~Sq_Matrix();
 	inline int getX() { return x; }
-	inline void setMatrix(int* inMatrix)
-	{
-		source.matrix = inMatrix;
-	}
+	inline void setMatrix(int* inMatrix) { source.matrix = inMatrix; }
 	inline int* getMatrix() { return source.matrix; }
 	void Transp_Mstrix();
 	Sq_Matrix* operator*(const int& Multiplier);
