@@ -20,23 +20,7 @@ Sq_Matrix::Sq_Matrix(int valueX)
 		}
 	}
 }
-Sq_Matrix::Sq_Matrix(const Sq_Matrix& source)
-{
-	x = source.x;
-	if (source.matrix)
-	{
-		matrix[i] = new int[x];
-		for (int i = 0; i < x; i++)
-		{
-			for (int j = 0; j < x; j++)
-			{
-				matrix[i][j] = source.matrix[i][j];
-			}
-		}
-	}
-	else
-		matrix = 0;
-}
+
 Sq_Matrix::~Sq_Matrix()
 {
 	for (int i = 0; i < x; i++)
@@ -44,7 +28,6 @@ Sq_Matrix::~Sq_Matrix()
 		delete[] matrix[i];
 	}
 }
-
 void Sq_Matrix::Transp_Mstrix()
 {
 	for (int i = 0; i < x; i++)
