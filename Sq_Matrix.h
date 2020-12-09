@@ -27,7 +27,6 @@ public:
 	inline int getX() { return x; }
 	inline void setMatrix(int* inMatrix)
 	{
-		matrix = inMatrix;
 		source.matrix = inMatrix;
 	}
 	inline int* getMatrix() { return source.matrix; }
